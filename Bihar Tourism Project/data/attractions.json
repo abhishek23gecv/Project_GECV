@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Mahabodhi Temple",
+        "location": "Bodh Gaya",
+        "description": "A UNESCO World Heritage Site, the Mahabodhi Temple is where Gautama Buddha is said to have attained enlightenment.",
+        "image": "/images/mahabodhi-temple.jpg"
+    },
+    {
+        "name": "Nalanda University",
+        "location": "Nalanda",
+        "description": "One of the oldest universities in the world, Nalanda was a renowned center for learning during ancient times.",
+        "image": "/images/nalanda-university.jpg"
+    },
+    {
+        "name": "Vikramshila Monastery",
+        "location": "Bhagalpur",
+        "description": "An ancient Buddhist university, second only to Nalanda, known for its intellectual contributions.",
+        "image": "/images/vikramshila.jpg"
+    },
+    {
+        "name": "Barabar Caves",
+        "location": "Jehanabad",
+        "description": "The oldest surviving rock-cut caves in India, these caves are an architectural marvel from the Maurya period.",
+        "image": "/images/barabar-caves.jpg"
+    }
+]

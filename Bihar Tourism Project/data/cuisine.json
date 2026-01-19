@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Litti Chokha",
+        "description": "A traditional dish of roasted wheat balls stuffed with spiced gram flour served with mashed vegetables.",
+        "image": "/images/litti-chokha.jpg"
+    },
+    {
+        "name": "Sattu Paratha",
+        "description": "Parathas stuffed with roasted gram flour mix, served with chutney or yogurt.",
+        "image": "/images/sattu-paratha.jpg"
+    },
+    {
+        "name": "Malpua",
+        "description": "A sweet pancake made with flour, milk, and sugar, often served during festivals.",
+        "image": "/images/malpua.jpg"
+    },
+    {
+        "name": "Khaja",
+        "description": "A layered, crispy sweet made with wheat flour, sugar, and ghee, originating from Bihar.",
+        "image": "/images/khaja.jpg"
+    }
+]

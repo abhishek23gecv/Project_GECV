@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Rajgir Ropeway",
+        "location": "Rajgir",
+        "description": "India's oldest ropeway offering stunning views of the hills and monasteries.",
+        "image": "/images/bihar.jpg"
+    },
+    {
+        "name": "Ganga River Rafting",
+        "location": "Patna",
+        "description": "Experience an adrenaline rush while rafting in the mighty Ganges.",
+        "image": "/images/mahabodhi mandir.jpg"
+    },
+    {
+        "name": "Valmiki National Park Safari",
+        "location": "West Champaran",
+        "description": "A wildlife safari through Bihar's only tiger reserve, offering a chance to spot diverse flora and fauna.",
+        "image": "/images/valmiki-safari.jpg"
+    },
+    {
+        "name": "Kanwar Lake Bird Watching",
+        "location": "Begusarai",
+        "description": "A paradise for bird watchers, Kanwar Lake is home to numerous migratory birds.",
+        "image": "/images/kanwar-lake.jpg"
+    }
+]

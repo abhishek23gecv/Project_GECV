@@ -1,0 +1,21 @@
+body {
+    background-color: #f8f9fa;
+}
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+h1, h2 {
+    color: #c0392b;
+    font-weight: 700;
+}
+footer {
+    margin-top: 50px;
+}
+.card-title {
+    font-weight: bold;
+    color: #c0392b;
+}
+.card-img-top {
+    border: 3px solid #c0392b;
+}

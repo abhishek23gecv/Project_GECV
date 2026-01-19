@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    
+    <link rel="stylesheet" href="/css/festival.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+    <!-- Include Navbar -->
+    <%- include('./partials/navbar') %>
+
+    <!-- Hero Section -->
+    <header class="festival-hero">
+        <div class="hero-content">
+            <h1>Festivals of Bihar</h1>
+            <p>Experience the vibrant and colorful festivals of Bihar, showcasing its rich culture and traditions.</p>
+        </div>
+    </header>
+
+    <!-- Festivals Section -->
+    <section class="festivals">
+        <h2 class="section-title" data-aos="fade-down">Explore Bihar's Festivals</h2>
+        <div class="festivals-grid">
+            <% festivals.forEach((festival) => { %>
+                <div class="festival-card" data-aos="fade-up">
+                    <img src="<%= festival.image %>" alt="<%= festival.name %>">
+                    <div class="card-details">
+                        <h3><%= festival.name %></h3>
+                        <h5><%= festival.location %></h5>
+                        <p><%= festival.description %></p>
+                        <span class="date">Celebrated: <%= festival.date %></span>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </section>
+
+    <!-- Why Festivals Section -->
+    <section class="why-festivals">
+        <h2 data-aos="fade-up">Why Festivals in Bihar?</h2>
+        <div class="features-grid">
+            <div class="feature" data-aos="zoom-in">
+                <i class="fas fa-praying-hands"></i>
+                <h3>Spiritual Significance</h3>
+                <p>Many festivals in Bihar are deeply rooted in spirituality and religion, offering a serene and divine experience.</p>
+            </div>
+            <div class="feature" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-theater-masks"></i>
+                <h3>Cultural Diversity</h3>
+                <p>Festivals celebrate the diverse culture of Bihar, bringing communities together in harmony.</p>
+            </div>
+            <div class="feature" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-campground"></i>
+                <h3>Community Bonding</h3>
+                <p>Enjoy the spirit of togetherness as festivals unite people from all walks of life.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include Footer -->
+    <%- include('./partials/footer') %>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

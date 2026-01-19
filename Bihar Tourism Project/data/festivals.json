@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Chhath Puja",
+        "month": "October-November",
+        "description": "A unique festival dedicated to the Sun God, celebrated with immense devotion and grandeur.",
+        "image": "/images/chhath-puja.jpg"
+    },
+    {
+        "name": "Sonpur Fair",
+        "month": "November",
+        "description": "Asia's largest cattle fair, showcasing Bihar's vibrant culture, trade, and rural life.",
+        "image": "/images/sonepur-fair.jpg"
+    },
+    {
+        "name": "Makar Sankranti",
+        "month": "January",
+        "description": "A harvest festival marked by kite flying, feasting, and worshipping the Sun God.",
+        "image": "/images/makar-sankranti.jpg"
+    },
+    {
+        "name": "Bihula Festival",
+        "month": "July-August",
+        "description": "Celebrated in Bhagalpur, this festival depicts the story of Bihula and her devotion to saving her husband.",
+        "image": "/images/bihula-festival.jpg"
+    }
+]

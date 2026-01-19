@@ -1,0 +1,11 @@
+TransactionID,Date,FromAccount,FromName,FromBank,ToAccount,ToName,ToBank,Amount,Currency,Description
+TX1001,2023-01-15,ACC1001,John Smith,Chase,ACC1002,Global Imports,HSBC,50000,USD,Invoice payment
+TX1002,2023-01-15,ACC1002,Global Imports,HSBC,ACC1003,XYZ Holdings,Deutsche,45000,USD,Fund transfer
+TX1003,2023-01-16,ACC1003,XYZ Holdings,Deutsche,ACC1004,Alice Johnson,Barclays,40000,USD,Payment
+TX1004,2023-01-17,ACC1004,Alice Johnson,Barclays,ACC1001,John Smith,Chase,35000,USD,Return
+TX1005,2023-02-01,ACC1005,Bob Williams,BoA,ACC1006,Acme Corp,Wells Fargo,100000,USD,Service fee
+TX1006,2023-02-02,ACC1006,Acme Corp,Wells Fargo,ACC1007,Delta Trading,Citi,80000,USD,Transfer
+TX1007,2023-02-03,ACC1007,Delta Trading,Citi,ACC1008,Oceanic Investments,Goldman,60000,USD,Investment
+TX1008,2023-03-10,ACC1008,Oceanic Investments,Goldman,ACC1009,Prestige Worldwide,Morgan,75000,USD,Payment
+TX1009,2023-03-11,ACC1009,Prestige Worldwide,Morgan,ACC1010,Jane Doe,UBS,50000,USD,Transfer
+TX1010,2023-03-12,ACC1010,Jane Doe,UBS,ACC1011,QuickCash Inc,Credit Suisse,25000,USD,Withdrawal

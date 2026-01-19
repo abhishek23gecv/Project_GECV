@@ -1,0 +1,176 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content {
+    z-index: 1;
+    max-width: 700px;
+    padding: 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-btn {
+    padding: 0.8rem 2rem;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.cta-btn:hover {
+    background-color: #e67e22;
+}
+
+/* Attractions Section */
+.attractions {
+    padding: 2rem 1rem;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #444;
+}
+
+.attractions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 0 auto;
+}
+
+.attraction-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.attraction-card:hover {
+    transform: scale(1.05);
+}
+
+.attraction-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-details {
+    padding: 1rem;
+}
+
+.card-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card-details p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.details-btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: #f39c12;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.details-btn:hover {
+    background: #d35400;
+}
+
+/* Why Visit Section */
+.why-visit {
+    padding: 2rem 1rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.why-visit h2{
+    color: #000;
+}
+
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.feature {
+    background: #f7f7f7;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature i {
+    font-size: 2.5rem;
+    color: #f39c12;
+    margin-bottom: 1rem;
+}
+
+.feature h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #666;
+}

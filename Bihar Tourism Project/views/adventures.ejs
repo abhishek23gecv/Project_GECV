@@ -1,0 +1,72 @@
+<head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/adventure.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+    <!-- Include Navbar -->
+    <%- include('./partials/navbar') %>
+
+    <!-- Hero Section -->
+    <header class="adventure-hero">
+        <div class="hero-content">
+            <h1>Unleash Your Inner Adventurer</h1>
+            <p>Experience thrilling activities and breathtaking destinations.</p>
+        </div>
+    </header>
+
+    <!-- Popular Adventures Section -->
+    <section class="popular-adventures">
+        <h2 class="section-title" data-aos="fade-down">Popular Adventures</h2>
+        <div class="adventures-grid">
+            <% adventures.forEach(adventure => { %>
+                <div class="adventure-card" data-aos="zoom-in">
+                    <img src="<%= adventure.image %>" alt="<%= adventure.name %>" class="adventure-image">
+                    <div class="adventure-details">
+                        <h3><%= adventure.name %></h3>
+                        <h5><%= adventure.location %></h5>
+                        <p><%= adventure.description %></p>
+                        <a href="<%= adventure.link %>" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </section>
+
+    <!-- Adventure Categories Section -->
+    <section class="adventure-categories">
+        <h2 class="section-title" data-aos="fade-up">Adventure Categories</h2>
+        <div class="categories-grid">
+            <div class="category-card" data-aos="fade-right">
+                <i class="fas fa-mountain"></i>
+                <h3>Mountain Trekking</h3>
+                <p>Conquer towering peaks and explore uncharted trails.</p>
+            </div>
+            <div class="category-card" data-aos="fade-left">
+                <i class="fas fa-water"></i>
+                <h3>Water Sports</h3>
+                <p>From rafting to surfing, dive into aquatic adventures.</p>
+            </div>
+            <div class="category-card" data-aos="fade-right" data-aos-delay="100">
+                <i class="fas fa-bicycle"></i>
+                <h3>Cycling Expeditions</h3>
+                <p>Discover scenic routes and challenge your endurance.</p>
+            </div>
+            <div class="category-card" data-aos="fade-left" data-aos-delay="100">
+                <i class="fas fa-campground"></i>
+                <h3>Camping</h3>
+                <p>Sleep under the stars and connect with nature.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include Footer -->
+    <%- include('./partials/footer') %>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

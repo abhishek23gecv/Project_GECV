@@ -1,0 +1,56 @@
+{
+    "crafts": [
+        {
+            "title": "Madhubani Painting",
+            "image": "/images/madhubani.jpg",
+            "description": "Madhubani painting is a famous folk art of Bihar, known for its intricate patterns and vibrant colors."
+        },
+        {
+            "title": "Handloom Textiles",
+            "image": "/images/handloom.jpg",
+            "description": "Bihar's handloom sector is famous for its Tussar silk and Bhagalpuri silk textiles."
+        },
+        {
+            "title": "Pottery",
+            "image": "/images/pottery.jpg",
+            "description": "Explore Bihar's traditional pottery craftsmanship that combines utility with aesthetics."
+        },
+        {
+            "title": "Stone Carving",
+            "image": "/images/stone-carving.jpg",
+            "description": "Intricate stone carvings are an integral part of Bihar's cultural heritage."
+        }
+    ],
+    "artisans": [
+        {
+            "name": "Ramesh Gupta",
+            "image": "/images/artisan1.jpg",
+            "bio": "A skilled artisan specializing in Madhubani paintings, keeping the tradition alive."
+        },
+        {
+            "name": "Suman Devi",
+            "image": "/images/artisan2.jpg",
+            "bio": "Expert in Bhagalpuri silk weaving, with years of dedication to handloom artistry."
+        }
+    ],
+    "processes": [
+        {
+            "title": "Designing",
+            "icon": "fas fa-palette",
+            "description": "Crafts start with creative designs inspired by Bihar's rich culture.",
+            "delay": 100
+        },
+        {
+            "title": "Material Sourcing",
+            "icon": "fas fa-tools",
+            "description": "Artisans use locally sourced materials for authenticity.",
+            "delay": 200
+        },
+        {
+            "title": "Crafting",
+            "icon": "fas fa-hands",
+            "description": "Each piece is meticulously crafted with skill and passion.",
+            "delay": 300
+        }
+    ]
+}

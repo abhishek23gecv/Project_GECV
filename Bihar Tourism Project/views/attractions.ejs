@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    
+    <link rel="stylesheet" href="/css/attractions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+    <!-- Include Navbar -->
+    <%- include('./partials/navbar') %>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Discover the Wonders of Bihar</h1>
+            <p>From ancient heritage to scenic beauty, Bihar has it all. Explore the top attractions and experience the culture.</p>
+            <a href="#explore"><button class="cta-btn">Explore Now</button></a>
+        </div>
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="/videos/bihar-attractions.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </header>
+
+    <!-- Attractions Section -->
+    <section class="attractions" id="explore">
+        <h2 class="section-title" data-aos="fade-down">Top Attractions in Bihar</h2>
+        <div class="attractions-grid">
+            <% attractions.forEach((attraction) => { %>
+                <div class="attraction-card" data-aos="fade-up">
+                    <img src="<%= attraction.image %>" alt="<%= attraction.name %>">
+                    <div class="card-details">
+                        <h3><%= attraction.name %></h3>
+                        <p><%= attraction.description %></p>
+                        <a href="<%= attraction.link %>" class="details-btn">Learn More</a>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </section>
+
+    <!-- Why Visit Section -->
+    <section class="why-visit">
+        <h2 data-aos="fade-up">Why Visit Bihar?</h2>
+        <div class="features-grid">
+            <div class="feature" data-aos="zoom-in">
+                <i class="fas fa-monument"></i>
+                <h3>Heritage Sites</h3>
+                <p>Discover the ancient landmarks and UNESCO heritage sites of Bihar.</p>
+            </div>
+            <div class="feature" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-utensils"></i>
+                <h3>Cuisine</h3>
+                <p>Treat your taste buds to the diverse and delicious flavors of Bihari cuisine.</p>
+            </div>
+            <div class="feature" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-map"></i>
+                <h3>Scenic Beauty</h3>
+                <p>From hills to rivers, explore the natural beauty of Bihar.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include Footer -->
+    <%- include('./partials/footer') %>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

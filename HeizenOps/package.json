@@ -1,0 +1,27 @@
+{
+  "name": "heizenops",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "db:setup": "turbo run db:setup",
+    "db:migrate": "turbo run db:migrate",
+    "db:seed": "turbo run db:seed"
+  },
+  "devDependencies": {
+    "@turbo/gen": "^1.10.12",
+    "turbo": "^1.10.12",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "packageManager": "npm@8.0.0",
+  "engines": {
+    "node": ">=18"
+  }
+}
