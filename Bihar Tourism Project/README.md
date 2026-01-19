@@ -114,8 +114,8 @@ npm install
 ---
 
 ## Contributors
-- **Project Owner:** [Your Name]
-- **Developer:** [Your Name]
+- **Project Owner:** [Abhishek Kumar]
+- **Developer:** [Abhishek Kumar]
 
 ---
 
